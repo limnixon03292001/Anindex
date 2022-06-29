@@ -1,0 +1,33 @@
+.visible {
+    opacity: 100;
+}
+
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* fixed z-20 bottom-7 right-7 rounded-full p-[7px] flex items-center justify-center bg-[#343333] dark:bg-[#323F4B] active:bg-[#343333]/80  focus:ring focus:ring-violet-300 dark:text-white text-white shadow-lg transition-opacity */
+
+.btn {
+    position: fixed;
+    z-index: 20;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #213650;
+    box-shadow: 7px;
+    color: white;
+    transform: rotate(-90deg);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn :active{
+    transform: scale(0.7);
+}

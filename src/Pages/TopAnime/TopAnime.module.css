@@ -1,0 +1,148 @@
+.topAnimeContainer{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topAnimeTitle{
+    position: relative;
+    font-size: x-large;
+    margin: 2rem 1rem 1rem;
+    padding: 0 1rem;
+    line-height: 2rem;
+}
+
+.topAnimeTitle::after {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #213650;
+}
+
+.tableWrapper{
+    padding: 1rem;
+}
+
+.tableWrapper table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+.tableWrapper table td{
+    padding: 14px;
+    /* border: 1px solid gray; */
+    font-weight: 300;
+}
+
+.tableWrapper table thead th {
+    padding: 13px;
+}
+
+.tableWrapper table thead tr{
+    background-color: rgb(21,31,46);
+    border: 1px solid rgb(21,31,46);
+}
+ 
+.tableWrapper  table tr:nth-child(even){
+    background-color: rgb(21,31,46);
+}   
+
+
+.tableWrapper table tr td:nth-child(1) ,.tableWrapper table tr td:nth-child(3){
+    text-align: center;
+}
+
+.animeTitleWrapper{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.animeImgWrapper{
+    width:67px;
+    height: 90px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.animeImgWrapper img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.animeDescriptionWrapper a{
+    text-decoration: underline;
+}
+
+.animeDescriptionWrapper p{
+    color: rgb(139,160,178);
+    font-size: smaller;
+}
+
+
+.rank {
+    font-size: x-large;
+
+}
+.btnContainer {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.btnLoadMore {
+    all:unset;
+    background-color: #152232;
+    color: rgb(133,150,165);
+    outline: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+   
+}
+
+.loaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .tableWrapper{
+        padding: 0;
+    }
+    .animeDescriptionWrapper a{
+        font-size: small;
+    }
+    .animeDescriptionWrapper p{
+        font-size: x-small;
+    }
+    .rank {
+        font-size: medium;
+    }
+    .animeImgWrapper{
+        display: none;
+    }
+    .topAnimeTitle{
+        font-size: large;
+    }
+    
+}

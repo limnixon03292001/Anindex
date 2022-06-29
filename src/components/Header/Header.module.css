@@ -1,0 +1,143 @@
+.header{
+    height: 5rem;
+    background-color: #152232;  
+}
+
+.headerCenterWrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    padding:0 1rem;
+}
+
+
+.searchHero{
+    width: 100%;
+    position: relative
+}
+
+.search{
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+}
+
+.searchBar {
+    margin-left: 1rem;
+    max-width: 270px;
+    width:100%;
+}
+  
+.inputSearch{
+    outline: none;
+    border:none;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    color:#EEEEEE;
+    font-size: 0.9rem;
+    padding: 13px 10px;
+    background-color: rgb(11, 22, 34);
+}
+
+.searchInner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.searchMainInner{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    background-color: rgb(21,31,46);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(133,150,165);
+}
+
+
+.searchAnimeWrapper {
+    background-color: rgb(21,31,46);
+    position: absolute;
+    width: 100%;
+    max-height: 390px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+}
+
+.searchAnimeContainer{
+    background-color: rgb(21,31,46);
+    border-radius: 8px;
+}
+
+.animeLink{
+    display: block;
+    margin: 1rem 0;
+    padding: 0 1rem
+}
+.animeLink p{
+    font-size: small;
+    line-height: 19px;
+    margin: 0;
+}
+.yearText{
+    color: rgb(133,150,165);
+}
+.searchAnime{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.imgContainer {
+    width:46px;
+    height: 46px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+}
+
+.imgContainer img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.loadingWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.loadingWrapper p{
+    margin: 0;
+    font-size: small;
+}
+
+
+ 
+
+

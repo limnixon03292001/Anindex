@@ -1,0 +1,61 @@
+/* inline-block cursor-pointer p-[1px] absolute drop-shadow-lg rotate-90 z-20 right-0 top-[45%] rounded-full bg-white dark:bg-[#323F4B] text-[#4F4D4D] dark:text-[#E4E7EB] opacity-0 group-hover:opacity-100 transition-opacity duration-100 */
+
+
+.nextArrow {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 3px;
+    transform: rotate(360deg);
+    z-index: 20;
+    right: -3px;
+    top: 35%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #E4E7EB;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.bgNext{
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom:0;
+    width: 3rem;
+    background: linear-gradient(90deg
+    ,rgba(11, 22, 34, 0) 10%, rgba(11, 22, 34, 1)); 
+}
+
+.prevArrow {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 3px;
+    transform: rotate(180deg);
+    z-index: 20;
+    left: -3px;
+    top: 35%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #E4E7EB;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.bgPrev{
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    width: 3rem;
+    background: linear-gradient(270deg
+    ,rgba(11, 22, 34, 0) 10%, rgba(11, 22, 34, 1)); 
+}
+

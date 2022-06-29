@@ -1,0 +1,114 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.topAnimeText{
+    font-weight: 500;
+    font-size: x-large;
+    color: rgb(201, 215, 227);
+    position: relative;
+    padding: 0 1rem;
+    line-height: 2rem;
+}
+
+
+.topAnimeText::after{
+    content: '';
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #213650;
+}
+
+.slider {
+    position: relative;
+    cursor: grab;
+    width: 100%;
+    overflow: hidden; 
+    margin-bottom: 2rem;  
+    z-index: 7;
+}
+
+.slick-slide{
+    position: relative;
+    min-height: 0;
+
+}
+
+.linkWrapper{
+    display: block;
+    height: 220px;
+    width: 100%;
+}
+.card {
+    width: 100%;
+    height:100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: auto;
+}
+
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    font-weight: normal;
+    font-size: smaller;
+    color: rgb(139,160,178);
+    margin-top: 1rem;
+    background-color: rgba(0,0,0,0.8);
+    padding: 3px 6px;
+}
+
+.imgTops{
+    background-color: #393E46;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.loaderContainer {
+    display: flex;
+    align-items: center;
+    color: rgb(133,150,165);
+}
+
+@media (max-width: 600px){
+    .topAnimeText{
+        font-weight: 500;
+        font-size: large;
+        color: rgb(201, 215, 227);
+    }
+    .linkWrapper{
+        max-width: 160px;
+        width: 100%;
+        height:  210px;
+    }
+}
+
+@media (max-width: 390px){
+    .linkWrapper{
+        max-width: 150px;
+        width: 100%;
+        height:  190px;
+    }
+}

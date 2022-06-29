@@ -1,0 +1,73 @@
+
+.recommendationWrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.titleRecommedation {
+    font-size: large;
+}
+.norecommendationText{
+    font-size: medium;
+    margin: 1rem 0;
+    color: rgb(139,160,178);
+}
+/* .slick-list{
+    max-width: 100%;
+    width: 100%;
+} */
+.slider {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    overflow: hidden;
+    margin-top: 1rem;  
+}
+
+.linkWrappers{
+    height: 100%;
+    max-width: 140px;
+    width: 100%;
+}
+
+.card {
+   
+    display: block;
+    /* border: 1px solid green; */
+}
+
+.card p {
+    font-weight: normal;
+    font-size: small;
+    margin: 1rem 0;
+    color: rgb(139,160,178);
+}
+
+.imgRecommendation{
+    background-color: #393E46;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px){
+    .slider {
+        max-width: 100%;
+        max-width: 100%;
+    }
+} 
+
+/* /* .slider:hover .nextArrow{
+    opacity: 100;
+    transition: all;
+} */

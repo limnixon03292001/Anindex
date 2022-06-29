@@ -1,0 +1,300 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+li{
+    margin-bottom: 1rem;
+}
+
+/* li p{
+    color: rgb(159,173,189);
+} */
+
+li span{
+    font-size: small;
+    color: rgb(133,150,165);
+    word-wrap: break-word;
+}
+.firstLayerWrapper{
+     width:100%;
+     height:100%;
+}
+.background {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.background::after{
+    content: '';
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background: linear-gradient(
+    180deg
+    ,rgba(11, 22, 34, .2) 40%,rgba(11, 22, 34, 2));
+  }
+
+.posterImg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -5rem;    
+}
+
+.firstLayer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 1rem;
+}   
+
+.popularity{
+    margin: 0;
+    color: rgb(139,160,178);
+}
+
+.title {
+    margin:0;
+}
+
+.titleJapanese {
+    margin: 0;
+    margin-bottom: 1rem;
+
+}
+
+.synopsis {
+    color: rgb(139,160,178);
+    font-size: small;
+}
+
+.imageWrapper{
+    flex-shrink: 0;
+    max-width: 190px;
+    height: 260px;
+    width: 100%;
+}
+.imageWrapper img{
+    border-radius: 8px;
+}
+.secondLayer {
+ 
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    /* margin-bottom: 5rem; */
+    padding: 0 1rem;
+}
+
+.secondLayerGrid {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 190px auto;
+    gap: 2rem;
+    transition: all .3s ease;
+    
+}
+
+.secondLayerLeftSide {  
+    width: 100%;
+
+    /* border: 1px solid violet; */
+}
+
+.secondLayerRightSide {
+    max-width: 960px;
+    width: 100%; 
+    /* border: 1px solid yellow; */
+}
+.score {
+    background-color: rgb(21,31,46);
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ranked {
+    background-color: rgb(21,31,46);
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.moreDetails {
+    background-color: rgb(21,31,46);
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+
+.gridCharacters {
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.charactersCard {
+    background-color: rgb(21,31,46);
+    border-radius: 8px;
+}
+.charactersActorWrapper{
+    width: 100%;
+    max-width: 100%;
+}
+.characterActor {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    height: 90px;
+    border-radius: 3px;
+   
+}
+
+.characterActorImg {
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #00adb5;
+}
+
+.character {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-gap: 0.7rem;
+    gap: 0.7rem;
+}
+
+.nameRole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px 0;
+}
+
+.nameRole :nth-child(1){
+    font-size: small;
+ }
+
+.nameRole :nth-child(2){
+    color: rgb(133,150,165);
+    font-size: smaller
+}
+
+.actor {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto 70px;
+    grid-gap: 0.7rem;
+    gap: 0.7rem;
+    overflow: hidden;
+}
+
+.themesGrid {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.themesItem {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(21,31,46);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: rgb(133,150,165);
+}
+
+.recommendationMainWrapper{
+    width: 100%;
+    max-width: 100%;
+}
+
+.loaderContainer {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(201, 215, 227);
+}
+
+
+@media (max-width: 600px) {
+    .imageWrapper{
+        max-width: 160px;
+        height: 160px;
+        width: 100%;
+    }
+    .imageWrapper img{
+        border-radius: 8px;
+    }
+    .firstLayer {
+        display: flex;
+        flex-direction: column;
+    }   
+    .imageWrapper{
+        margin: 0 auto;
+        height: max-content;
+    }
+    .secondLayerGrid {
+        display: block;
+        grid-template-columns: unset;
+    }
+    .nameRole :nth-child(1){
+        font-size:x-small   ;
+     }
+    
+    .nameRole :nth-child(2){
+        color: rgb(133,150,165);
+        font-size:x-small
+    }
+    .themesGrid {
+        grid-template-columns: unset;
+       
+    }
+    .gridCharacters {
+        grid-template-columns: unset;
+    
+    }
+}
+    
