@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import {FaSearch} from 'react-icons/fa';
 import Loader from '../GlobalLoader/Loader';
+import { DebounceInput } from 'react-debounce-input';
 
 
 const searchAnime = ({queryKey}) => {
@@ -41,7 +42,15 @@ const Header = () => {
         <div className={styles.searchHero}>
                 <div className={styles.searchInner}>
                     <div className={styles.searchMainInner} >
-                        <input type="text" placeholder="Search..." value={searchData} onChange={(e) => setSearchData(e.target.value)}  required className={styles.inputSearch} id="searchWrapper"/>
+                        <DebounceInput
+                          minLength={2}
+                          debounceTimeout={300}
+                          value={searchData}
+                          onChange={(e) => setSearchData(e.target.value)} 
+                          placeholder="Search anime..." 
+                          className={styles.inputSearch}
+                          id="searchWrapper"
+                        />
                         {/* <Link> */}
                             <button type="submit" className={styles.searchIcon}>
                                 <FaSearch size="1rem"/>

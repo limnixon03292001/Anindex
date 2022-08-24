@@ -5,6 +5,7 @@ import styles from './SearchBarHero.module.css';
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import Loader from '../../GlobalLoader/Loader';
+import { DebounceInput } from 'react-debounce-input';
 
 
 const searchAnime = ({queryKey}) => {
@@ -35,7 +36,14 @@ const SearchBarHero = () => {
         <form>
             <div className={styles.searchInner}>
                 <div className={styles.searchMainInner}>
-                    <input type="text" placeholder="Search..." value={searchData} onChange={(e) => setSearchData(e.target.value)}  required id="searchWrapper"/>
+                    <DebounceInput
+                        minLength={2}
+                        debounceTimeout={300}
+                        value={searchData}
+                        onChange={(e) => setSearchData(e.target.value)} 
+                        placeholder="Search anime..." 
+                        id="searchWrapper"
+                    />
                     {/* onInput={inputs} style={inputStyle} */}
                     {/* <Link> */}
                         <button type="submit" className={styles.searchIcon}>
